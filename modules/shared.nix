@@ -41,11 +41,24 @@
     enableFishIntegration = true;
   };
 
+  programs.vim = {
+    enable = true;
+    settings = {
+      expandtab = true;
+      shiftwidth = 2;
+      tabstop = 2;
+
+      number = true;
+      relativenumber = true;
+
+      mouse = "a";
+    };
+  };
+
   home.packages = with pkgs; [
     wget
     curl
 
-    vim
     neovim
 
     htop
@@ -62,5 +75,9 @@
     zip
     unzip
     tree
+
+    lazygit
+    lazydocker
+    k9s
   ];
 }
