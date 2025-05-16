@@ -15,6 +15,11 @@
     history.size = 10000;
   };
 
+  programs.fish = {
+    enable = true;
+    generateCompletions = true;
+  };
+
   programs.fzf = {
     enable = true;
     enableBashIntegration = true;
