@@ -1,10 +1,16 @@
-{ config, pkgs, lib, configType, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  configType,
+  ...
+}:
 
 {
 
   imports = [
     ./modules/shared.nix
-  ] 
+  ]
   # ++ lib.optional (configType == "minimal") ./modules/minimal.nix
   ++ lib.optional (configType == "full") ./modules/full.nix;
 

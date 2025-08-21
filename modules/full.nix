@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   # starship - an customizable prompt for any shell
@@ -6,9 +11,9 @@
     enable = true;
   };
 
-  home.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-  ];
-
-  fonts.fontconfig.enable = true;
+  # home.packages = with pkgs; [
+  #   nerd-fonts.jetbrains-mono
+  # ];
+  #
+  # fonts.fontconfig.enable = true;
 }
