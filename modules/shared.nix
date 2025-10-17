@@ -96,11 +96,13 @@
     zellij
     zoxide
     yazi
+    stow
 
     rustup
     zig
     go
     nodejs_24
+    bun
 
     zip
     unzip
